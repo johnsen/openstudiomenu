@@ -1,0 +1,13 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Version=1.0
+Type=Application
+Terminal=false
+Icon[en_US]=gnome-nettool
+Name[en_US]=Japa
+Exec=japa -J
+Comment[en_US]=Japa, is a 'perceptual' or 'psychoacoustic' audio spectrum analyser
+Name=Japa
+Comment=Japa, is a 'perceptual' or 'psychoacoustic' audio spectrum analyser
+Icon=gnome-panel-launcher

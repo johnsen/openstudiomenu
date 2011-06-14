@@ -1,0 +1,14 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Encoding=UTF-8
+Type=Application
+Name=Specimen
+GenericName=Specimen
+Comment=Sound Sampler
+Icon=specimen
+TryExec=specimen
+Exec=specimen
+Terminal=false
+Categories=Application;AudioVideo;AudioVideoEditing;Music;
+Icon[en_US]=gnome-gmush

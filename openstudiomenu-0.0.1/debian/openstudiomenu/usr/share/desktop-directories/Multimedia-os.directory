@@ -1,0 +1,11 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Version=1.0
+Type=Directory
+Icon[en_US]=rhythmbox
+Name[en_US]=Multimedia
+Comment[en_US]=Multimedia Players
+Name=Multimedia
+Comment=Multimedia Players
+Icon=rhythmbox

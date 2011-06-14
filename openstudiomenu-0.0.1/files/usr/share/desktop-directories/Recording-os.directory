@@ -1,0 +1,11 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Version=1.0
+Type=Directory
+Icon[en_US]=/usr/share/ardour2/icons/ardour_icon_48px.png
+Name[en_US]=Recording
+Comment[en_US]=Tools for recording audio
+Name=Recording
+Comment=Tools for recording audio
+Icon=/usr/share/ardour2/icons/ardour_icon_48px.png
