@@ -1,3 +1,9 @@
+openstudio-menu (0.0.1-1openstudio4) lucid; urgency=low
+
+  * First stable version
+
+ -- rosea grammostola <rosea.grammostola@gmail.com>  Sat, 18 Jun 2011 15:04:16 +0200
+
 openstudio-menu (0.0.1-1openstudio3) lucid; urgency=low
 
   * Fourth testing release

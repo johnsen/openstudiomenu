@@ -1,0 +1,43 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.8
+Date: Sat, 18 Jun 2011 15:04:16 +0200
+Source: openstudio-menu
+Binary: openstudio-menu
+Architecture: source i386
+Version: 0.0.1-1openstudio4
+Distribution: lucid
+Urgency: low
+Maintainer: rosea grammostola <rosea.grammostola@gmail.com>
+Changed-By: rosea grammostola <rosea.grammostola@gmail.com>
+Description: 
+ openstudio-menu - Small hack to reorganize the multimedia and 'audio & video' menus
+Changes: 
+ openstudio-menu (0.0.1-1openstudio4) lucid; urgency=low
+ .
+   * First stable version
+Checksums-Sha1: 
+ 876b85c617b0800f3d9bb394a525b0c0b64b3a57 1127 openstudio-menu_0.0.1-1openstudio4.dsc
+ e821239a842bece9e8dffa6404d9cfb4ce2755e0 54582 openstudio-menu_0.0.1-1openstudio4.tar.gz
+ 30abdb8cc29c606710bccd68517a1cf97bab6daa 59694 openstudio-menu_0.0.1-1openstudio4_i386.deb
+Checksums-Sha256: 
+ 4c28bae25dcd9c6785fde437fd965f20da3b715eee619563a47ea918c7580aa5 1127 openstudio-menu_0.0.1-1openstudio4.dsc
+ aaff92f6dc3c246eb561171f26ce7288b6c3dec198ac5fbc338d3172b23d759b 54582 openstudio-menu_0.0.1-1openstudio4.tar.gz
+ 3082fd906ddfc22c016adb2d438b19a3d7e386cf68a7257fe7f7cb216d7e5e7f 59694 openstudio-menu_0.0.1-1openstudio4_i386.deb
+Files: 
+ e5d4ccfb92a64218a64d070d72463778 1127 unknown extra openstudio-menu_0.0.1-1openstudio4.dsc
+ b4447a15600979fc68bdbb9bbc584251 54582 unknown extra openstudio-menu_0.0.1-1openstudio4.tar.gz
+ 5c7fc7ec9ca5152f4eae30774d7c3ba5 59694 unknown extra openstudio-menu_0.0.1-1openstudio4_i386.deb
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.10 (GNU/Linux)
+
+iQEcBAEBAgAGBQJOAv0aAAoJELVbQUuuplhrI8IH/1vNjG8OwC3gsGFJbd1qF3Xc
+r+JXRzf+OY//KvDf81HJ0UEBvMhH7CmfikJwTleEdY/RKcBLrw5g9fcdhA5qun0i
+U/oR7rz5oWrlk9IgRIezxzDqtC+SxnQci+9ih1kNWe5PYtbHcLj4Ot683Ch1Qdoe
+JGygzUCIePmTjTtKmNDRQT2JE0vMatzwniQZujtP2WcPgNHcypDU3a4af4/lqZTN
+CkXZGlU2Lj8GDnjsowuWMumEwOdHI3hXpgRCuda/FGEbtieurXQUxIRQmwPejaiN
+UrjZ73dGiBuj3QxZ4Ki92bfe5bn10lLvQzS8C/+eUQ9asWTB/6VxY5iSq6CRQ5Y=
+=9tap
+-----END PGP SIGNATURE-----

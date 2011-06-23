@@ -1,7 +1,7 @@
 [Desktop Entry]
 Encoding=UTF-8
-Name=Soundcards Control
-Comment=Soundcards Control Menu
-Icon=audio-card
+Name=Synths & Samplers
+Comment=Synthesizers & Samplers Menu
+Icon=synths-samplers
 Type=Directory
 X-Ubuntu-Gettext-Domain=gnome-menus

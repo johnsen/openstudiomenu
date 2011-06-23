@@ -1,7 +1,7 @@
 [Desktop Entry]
 Encoding=UTF-8
-Name=Soundcards Control
-Comment=Soundcards Control Menu
-Icon=audio-card
+Name=Mixer & Effects
+Comment=Mixer & Effects Menu
+Icon=mixer-effects
 Type=Directory
 X-Ubuntu-Gettext-Domain=gnome-menus

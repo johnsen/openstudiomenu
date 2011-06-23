@@ -1,0 +1,121 @@
+ dpkg-buildpackage -rfakeroot -D -us -uc
+dpkg-buildpackage: set CFLAGS to default value: -g -O2
+dpkg-buildpackage: set CPPFLAGS to default value: 
+dpkg-buildpackage: set LDFLAGS to default value: -Wl,-Bsymbolic-functions
+dpkg-buildpackage: set FFLAGS to default value: -g -O2
+dpkg-buildpackage: set CXXFLAGS to default value: -g -O2
+dpkg-buildpackage: source package openstudio-menu
+dpkg-buildpackage: source version 0.0.1-1openstudio4
+dpkg-buildpackage: source changed by rosea grammostola <rosea.grammostola@gmail.com>
+dpkg-buildpackage: host architecture i386
+ fakeroot debian/rules clean
+test -x debian/rules
+dh_testroot
+dh_clean 
+rm -rf debian/check_file_copies
+rm -rf debian/transform_file_copies
+ dpkg-source -b openstudio-menu
+dpkg-source: warning: source directory 'openstudio-menu' is not <sourcepackage>-<upstreamversion> 'openstudio-menu-0.0.1'
+dpkg-source: info: using source format `1.0'
+dpkg-source: info: building openstudio-menu in openstudio-menu_0.0.1-1openstudio4.tar.gz
+dpkg-source: info: building openstudio-menu in openstudio-menu_0.0.1-1openstudio4.dsc
+ debian/rules build
+test -x debian/rules
+mkdir -p "."
+ fakeroot debian/rules binary
+test -x debian/rules
+dh_testroot
+dh_prep 
+dh_installdirs -A 
+mkdir -p "."
+Adding cdbs dependencies to debian/openstudio-menu.substvars
+dh_installdirs -popenstudio-menu 
+dh_installdocs -popenstudio-menu 
+dh_installexamples -popenstudio-menu 
+dh_installman -popenstudio-menu  
+dh_installinfo -popenstudio-menu  
+dh_installmenu -popenstudio-menu 
+dh_installcron -popenstudio-menu 
+dh_installinit -popenstudio-menu  
+Duplicate specification "O=s" for option "O"
+dh_installdebconf -popenstudio-menu 
+dh_installemacsen -popenstudio-menu   
+dh_installcatalogs -popenstudio-menu 
+dh_installpam -popenstudio-menu 
+dh_installlogrotate -popenstudio-menu 
+dh_installlogcheck -popenstudio-menu 
+dh_installchangelogs -popenstudio-menu  
+dh_installudev -popenstudio-menu 
+dh_lintian -popenstudio-menu 
+dh_install -popenstudio-menu  
+dh_link -popenstudio-menu  
+dh_buildinfo -popenstudio-menu 
+dh_installmime -popenstudio-menu 
+set -e; \
+	
+set -e; \
+	{ \
+	    sed 's/#PACKAGE#/openstudio-menu/g; s/#DEB_DIVERT_EXTENSION#/.openstudio/g' /usr/share/config-package-dev/divert.sh.in; \
+	     echo 'if [ "$1" = "configure" ]; then';    echo "    divert_link /etc/xdg/menus/applications.menu ";  echo 'fi';  \
+	} >> /mnt/debianhome/derick/openstudiopro/openstudiomenu/openstudio-menu/debian/openstudio-menu.postinst.debhelper
+set -e; \
+	{ \
+	    sed 's/#PACKAGE#/openstudio-menu/g; s/#DEB_DIVERT_EXTENSION#/.openstudio/g' /usr/share/config-package-dev/divert.sh.in; \
+	     echo 'if [ "$1" = "remove" ]; then';  echo "    undivert_unlink /etc/xdg/menus/applications.menu ";  echo 'fi';  \
+	} >> /mnt/debianhome/derick/openstudiopro/openstudiomenu/openstudio-menu/debian/openstudio-menu.prerm.debhelper
+set -e; \
+	{ \
+	    echo -n "diverted-files="; \
+	     echo -n "diverts-"; /usr/share/config-package-dev/encode "/etc/xdg/menus/applications.menu"; echo -n ", "; \
+	    echo; \
+	} >> /mnt/debianhome/derick/openstudiopro/openstudiomenu/openstudio-menu/debian/openstudio-menu.substvars
+dh_strip -popenstudio-menu  
+dh_compress -popenstudio-menu  
+dh_fixperms -popenstudio-menu  
+dh_makeshlibs -popenstudio-menu  
+dh_installdeb -popenstudio-menu 
+dh_perl -popenstudio-menu 
+dh_shlibdeps -popenstudio-menu    
+dh_gencontrol -popenstudio-menu  
+dpkg-gencontrol: warning: unknown substitution variable ${shlibs:Depends}
+dh_md5sums -popenstudio-menu 
+dh_builddeb -popenstudio-menu 
+dpkg-deb: building package `openstudio-menu' in `../openstudio-menu_0.0.1-1openstudio4_i386.deb'.
+ dpkg-genchanges  >../openstudio-menu_0.0.1-1openstudio4_i386.changes
+dpkg-genchanges: including full source code in upload
+dpkg-buildpackage: full upload; Debian-native package (full source is included)
+Now running lintian...
+W: openstudio-menu source: native-package-with-dash-version
+W: openstudio-menu source: missing-debian-source-format
+W: openstudio-menu source: out-of-date-standards-version 3.8.3 (current is 3.8.4)
+W: openstudio-menu: copyright-has-url-from-dh_make-boilerplate
+E: openstudio-menu: section-is-dh_make-template
+W: openstudio-menu: desktop-command-not-in-package /usr/share/applications/Qutecsound-os.desktop qutecsound
+W: openstudio-menu: desktop-command-not-in-package /usr/share/applications/fantasia-os.desktop java
+W: openstudio-menu: script-not-executable ./usr/share/applications/Qutecsound-os.desktop
+W: openstudio-menu: unusual-interpreter ./usr/share/applications/Qutecsound-os.desktop #!xdg-open
+W: openstudio-menu: script-not-executable ./usr/share/applications/fantasia-os.desktop
+W: openstudio-menu: unusual-interpreter ./usr/share/applications/fantasia-os.desktop #!xdg-open
+W: openstudio-menu: script-not-executable ./usr/share/desktop-directories/AudioEdit-os.directory
+W: openstudio-menu: unusual-interpreter ./usr/share/desktop-directories/AudioEdit-os.directory #!xdg-open
+W: openstudio-menu: script-not-executable ./usr/share/desktop-directories/Jack-os.directory
+W: openstudio-menu: unusual-interpreter ./usr/share/desktop-directories/Jack-os.directory #!xdg-open
+W: openstudio-menu: script-not-executable ./usr/share/desktop-directories/Midi-os.directory
+W: openstudio-menu: unusual-interpreter ./usr/share/desktop-directories/Midi-os.directory #!xdg-open
+W: openstudio-menu: script-not-executable ./usr/share/desktop-directories/Multimedia-os.directory
+W: openstudio-menu: unusual-interpreter ./usr/share/desktop-directories/Multimedia-os.directory #!xdg-open
+W: openstudio-menu: script-not-executable ./usr/share/desktop-directories/Musician-os.directory
+W: openstudio-menu: unusual-interpreter ./usr/share/desktop-directories/Musician-os.directory #!xdg-open
+W: openstudio-menu: script-not-executable ./usr/share/desktop-directories/Recording-os.directory
+W: openstudio-menu: unusual-interpreter ./usr/share/desktop-directories/Recording-os.directory #!xdg-open
+W: openstudio-menu: script-not-executable ./usr/share/desktop-directories/Soundsynthesis-os.directory
+W: openstudio-menu: unusual-interpreter ./usr/share/desktop-directories/Soundsynthesis-os.directory #!xdg-open
+Finished running lintian.
+Now signing changes and any dsc files...
+ signfile openstudio-menu_0.0.1-1openstudio4.dsc rosea grammostola <rosea.grammostola@gmail.com>
+gpg: gpg-agent is not available in this session
+
+ signfile openstudio-menu_0.0.1-1openstudio4_i386.changes rosea grammostola <rosea.grammostola@gmail.com>
+gpg: gpg-agent is not available in this session
+
+Successfully signed dsc and changes files

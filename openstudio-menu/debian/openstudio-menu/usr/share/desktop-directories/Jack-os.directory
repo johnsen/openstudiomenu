@@ -1,0 +1,11 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Version=1.0
+Type=Directory
+Icon[en_US]=jack
+Name[en_US]=JACK
+Comment[en_US]=JACK & ALSA tools
+Name=JACK
+Comment=JACK & ALSA tools
+Icon=jack
